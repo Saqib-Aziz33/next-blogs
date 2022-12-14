@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Hero() {
   return (
-    <Container className="hero" sx={{ mt: 2 }}>
+    <Container className="hero" sx={{ mt: 2, p: "0 !important" }}>
       <Grid container>
         <Grid
           item

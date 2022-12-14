@@ -36,10 +36,12 @@ body{
 
 // ********************************* components *********************************
 .navbar{
-  background-color: unset;
+  .logo{
+    filter: invert(1);
+  }
   a{
     text-decoration: none;
-    color: #000;
+    color: #fff;
   }
 }
 
@@ -70,7 +72,6 @@ body{
   background: url('../media/hero-bg.jpg') no-repeat center fixed;
   background-size: cover;
   border-radius: 8px;
-  padding: 0;
 
   .content{
     padding: 4rem 2rem;

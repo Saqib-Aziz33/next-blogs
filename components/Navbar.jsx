@@ -13,7 +13,7 @@ function Navbar() {
   return (
     <AppBar
       position="static"
-      sx={{ color: "#000", py: "0.5rem" }}
+      sx={{ color: "#fff", py: "0.5rem", background: "#2b2c28" }}
       elevation={0}
       className="navbar"
     >
@@ -26,14 +26,20 @@ function Navbar() {
       >
         <Link href="/">
           <Stack direction="row" alignItems="center">
-            <Image src="/assets/logo.png" alt="" height={50} width={50} />
+            <Image
+              src="/assets/logo.png"
+              alt=""
+              className="logo"
+              height={50}
+              width={50}
+            />
             <Typography variant="h6">NEXT Blogs</Typography>
           </Stack>
         </Link>
 
         <Stack direction="row" gap={2} alignItems="center">
           <Link href="/blogs">
-            <Button>Blogs</Button>
+            <Button sx={{ color: "inherit" }}>Blogs</Button>
           </Link>
           <Link href="/auth">
             <Button variant="contained">Sign In</Button>
